@@ -1,0 +1,31 @@
+tags:
+  - Turmas
+summary: Buscar turma pelo ID
+description: Retorna as informações de uma turma específica com base em seu ID.
+parameters:
+  - name: id
+    in: path
+    type: integer
+    required: true
+    description: ID da turma
+    example: 1
+responses:
+  200:
+    description: Dados da turma retornados com sucesso
+    schema:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        nome:
+          type: string
+          example: "Turma A"
+        turno:
+          type: string
+          example: "Manhã"
+        professor:
+          type: string
+          example: "Carlos Silva"
+  404:
+    description: Turma não encontrada

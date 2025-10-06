@@ -1,0 +1,44 @@
+tags:
+  - Alunos
+summary: Cadastrar novo aluno
+description: Cadastra um novo aluno no sistema com suas informações pessoais e notas.
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        nome:
+          type: string
+          example: "Ana Souza"
+        email:
+          type: string
+          example: "ana.souza@escola.com"
+        data_nascimento:
+          type: string
+          example: "2008-03-14"
+        nota_1:
+          type: number
+          format: float
+          example: 7.5
+        nota_2:
+          type: number
+          format: float
+          example: 8.0
+        media_final:
+          type: number
+          format: float
+          example: 7.75
+responses:
+  201:
+    description: Aluno criado com sucesso
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Aluno criado com sucesso!"
+        id:
+          type: integer
+          example: 1

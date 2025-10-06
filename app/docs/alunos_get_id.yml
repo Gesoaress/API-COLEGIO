@@ -1,0 +1,40 @@
+tags:
+  - Alunos
+summary: Buscar aluno pelo ID
+description: Retorna as informações de um aluno específico com base em seu ID.
+parameters:
+  - name: id
+    in: path
+    type: integer
+    required: true
+    description: ID do aluno
+    example: 1
+responses:
+  200:
+    description: Dados do aluno retornados com sucesso
+    schema:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        nome:
+          type: string
+          example: "Ana Souza"
+        email:
+          type: string
+          example: "ana.souza@escola.com"
+        data_nascimento:
+          type: string
+          example: "2008-03-14"
+        nota_1:
+          type: number
+          example: 7.5
+        nota_2:
+          type: number
+          example: 8.0
+        media_final:
+          type: number
+          example: 7.75
+  404:
+    description: Aluno não encontrado

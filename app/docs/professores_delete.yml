@@ -1,0 +1,16 @@
+tags:
+  - Professores
+summary: Excluir professor
+description: Remove um professor do sistema com base em seu ID.
+parameters:
+  - name: id
+    in: path
+    type: integer
+    required: true
+    description: ID do professor
+    example: 1
+responses:
+  200:
+    description: Professor removido com sucesso
+  404:
+    description: Professor não encontrado

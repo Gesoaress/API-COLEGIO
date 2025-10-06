@@ -1,0 +1,30 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+env/
+venv/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Flask / instance data
+instance/
+*.sqlite3
+
+# Byte-compiled / logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+"@ | Set-Content .gitignore

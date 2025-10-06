@@ -1,0 +1,40 @@
+tags:
+  - Alunos
+summary: Atualizar dados de um aluno
+description: Atualiza as informações de um aluno existente no sistema.
+parameters:
+  - name: id
+    in: path
+    type: integer
+    required: true
+    description: ID do aluno
+    example: 1
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        nome:
+          type: string
+          example: "Ana Beatriz Souza"
+        email:
+          type: string
+          example: "ana.beatriz@escola.com"
+        data_nascimento:
+          type: string
+          example: "2008-03-14"
+        nota_1:
+          type: number
+          example: 8.0
+        nota_2:
+          type: number
+          example: 9.0
+        media_final:
+          type: number
+          example: 8.5
+responses:
+  200:
+    description: Aluno atualizado com sucesso
+  404:
+    description: Aluno não encontrado

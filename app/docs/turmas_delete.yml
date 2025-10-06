@@ -1,0 +1,16 @@
+tags:
+  - Turmas
+summary: Excluir turma
+description: Remove uma turma do sistema com base em seu ID.
+parameters:
+  - name: id
+    in: path
+    type: integer
+    required: true
+    description: ID da turma
+    example: 1
+responses:
+  200:
+    description: Turma deletada com sucesso
+  404:
+    description: Turma não encontrada

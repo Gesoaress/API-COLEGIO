@@ -1,0 +1,24 @@
+tags:
+  - Turmas
+summary: Listar todas as turmas
+description: Retorna uma lista com todas as turmas cadastradas no sistema.
+responses:
+  200:
+    description: Lista de turmas retornada com sucesso
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: integer
+            example: 1
+          nome:
+            type: string
+            example: "Turma A"
+          turno:
+            type: string
+            example: "Manhã"
+          professor:
+            type: string
+            example: "Carlos Silva"

@@ -1,0 +1,34 @@
+tags:
+  - Turmas
+summary: Criar nova turma
+description: Cadastra uma nova turma no sistema vinculada a um professor existente.
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        nome:
+          type: string
+          example: "Turma A"
+        turno:
+          type: string
+          example: "Manhã"
+        professor_id:
+          type: integer
+          example: 1
+responses:
+  201:
+    description: Turma criada com sucesso
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Turma criada com sucesso!"
+        id:
+          type: integer
+          example: 1
+  404:
+    description: Professor não encontrado

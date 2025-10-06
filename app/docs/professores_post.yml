@@ -1,0 +1,38 @@
+tags:
+  - Professores
+summary: Cadastrar novo professor
+description: Endpoint para cadastrar um novo professor no sistema
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        nome:
+          type: string
+          example: "Carlos Silva"
+        email:
+          type: string
+          example: "carlos@escola.com"
+        idade:
+          type: integer
+          example: 40
+        materia:
+          type: string
+          example: "Matemática"
+        observacoes:
+          type: string
+          example: "Coordenador da área de exatas"
+responses:
+  201:
+    description: Professor criado com sucesso
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Professor criado com sucesso!"
+        id:
+          type: integer
+          example: 1

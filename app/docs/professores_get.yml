@@ -1,0 +1,30 @@
+tags:
+  - Professores
+summary: Listar todos os professores
+description: Retorna uma lista de todos os professores cadastrados no sistema.
+responses:
+  200:
+    description: Lista de professores retornada com sucesso
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: integer
+            example: 1
+          nome:
+            type: string
+            example: "Carlos Silva"
+          email:
+            type: string
+            example: "carlos@escola.com"
+          idade:
+            type: integer
+            example: 40
+          materia:
+            type: string
+            example: "Matemática"
+          observacoes:
+            type: string
+            example: "Coordenador da área de exatas"

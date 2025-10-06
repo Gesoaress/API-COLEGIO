@@ -1,0 +1,16 @@
+tags:
+  - Alunos
+summary: Excluir aluno
+description: Remove um aluno do sistema com base em seu ID.
+parameters:
+  - name: id
+    in: path
+    type: integer
+    required: true
+    description: ID do aluno
+    example: 1
+responses:
+  200:
+    description: Aluno deletado com sucesso
+  404:
+    description: Aluno não encontrado

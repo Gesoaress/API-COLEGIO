@@ -1,0 +1,31 @@
+tags:
+  - Turmas
+summary: Atualizar dados de uma turma
+description: Atualiza as informações de uma turma existente.
+parameters:
+  - name: id
+    in: path
+    type: integer
+    required: true
+    description: ID da turma
+    example: 1
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        nome:
+          type: string
+          example: "Turma B"
+        turno:
+          type: string
+          example: "Tarde"
+        professor_id:
+          type: integer
+          example: 2
+responses:
+  200:
+    description: Turma atualizada com sucesso
+  404:
+    description: Turma ou professor não encontrado
