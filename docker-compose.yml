@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: api_colegio
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+      - ./instance:/app/instance
+    environment:
+      - FLASK_ENV=development
+    command: python run.py

@@ -1,0 +1,25 @@
+# Ignorar ambiente virtual
+.venv
+venv/
+
+# Ignorar caches do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar o banco local (será criado no container)
+instance/
+db.sqlite3
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar Git
+.git
+.gitignore
+
+# Ignorar arquivos temporários do VSCode
+.vscode/
+*.log
