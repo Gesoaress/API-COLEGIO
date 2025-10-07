@@ -130,6 +130,7 @@ Graças ao volume configurado em `docker-compose.yml`, os dados são persistidos
 
 ## 👥 Autor
 Geovane Soares da Silva
+Richard Ferreira 
 
 Projeto desenvolvido para a disciplina de **Desenvolvimento de APIs e Microsserviços (DAM)**.
 
